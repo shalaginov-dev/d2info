@@ -1,13 +1,14 @@
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {setTeamPlayer} from "../redux/dotaSlice";
+import {memo} from "react";
 
 
-export function TeamBlock({id, title, image, players}) {
+export const TeamBlock = memo(({id, title, image, players}) =>{
     const dispatch = useDispatch()
 
     const handlePickPlayer = (player) => {
-        dispatch(setTeamPlayer({name: player.nickname, title}))
+        dispatch(setTeamPlayer(player))
     }
 
     return (
@@ -21,13 +22,11 @@ export function TeamBlock({id, title, image, players}) {
                     />
                 </div>
                 {
-                    players.map((p, i) => <div key={i}>
-                        <Link onClick={() => {
-                            handlePickPlayer(p)
-                        }} to={`/heroes`}>{p.nickname}</Link>
+                    players.map((p, i) => <div className="team-block-player" key={i}>
+                        <Link onClick={() => {handlePickPlayer(p)}} to={`/heroes`}>{p.nickname}</Link>
                     </div>)
                 }
             </div>
         </div>
     )
-}
+})

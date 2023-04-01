@@ -1,23 +1,29 @@
-import {heroes} from "../assets/img/herosIcons/heroes";
+import {heroes} from "../assets/heroes";
 import {setHero} from "../redux/dotaSlice";
 import {useDispatch} from "react-redux";
+import {Link} from "react-router-dom";
+import {memo} from "react";
 
-function HeroesPage() {
+export const HeroesPage = memo(() => {
     const dispatch = useDispatch()
 
     const handlePickHero = (hero) => {
-        dispatch(setHero(hero))
+        dispatch(setHero({id: hero.id, name: hero.name}))
     }
 
     return (
         <div className="container">
             <div className="heroes-block">
                 {
-                    heroes.map((h, i) => <img key={i} onClick={()=>{handlePickHero(h)}} src={h.icon} alt="ww"/>)
+                    heroes.map((hero, i) => <Link key={i} onClick={() => {
+                    }} to={`/info`}>
+                        <img onClick={() => {
+                            handlePickHero(hero)
+                        }} src={hero.img} alt="ww"/>
+                    </Link>)
                 }
             </div>
         </div>
     )
-}
+})
 
-export default HeroesPage

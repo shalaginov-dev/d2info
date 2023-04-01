@@ -9,9 +9,9 @@ export const teams = [
         image: TeamLiquid,
         title: 'TeamLiquid',
         players: [
-            {id: 'liquid1', nickname: 'miCKe'},
+            {id: '152962063', nickname: 'miCKe'},
             {id: 'liquid2', nickname: 'Nisha'},
-            {id: 'liquid3', nickname: 'zai'},
+            {id: '73562326', nickname: 'zai'},
             {id: 'liquid4', nickname: 'Boxi'},
             {id: 'liquid5', nickname: 'Insania'},
         ]

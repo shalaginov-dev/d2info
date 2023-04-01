@@ -1,12 +1,21 @@
 import {createSlice} from '@reduxjs/toolkit'
-import  {teams} from '../assets/teams'
+import {teams} from '../assets/teams'
+import {fetchPlayerStat} from "./asyncActions";
+
+export const STATUS = {
+    IDLE: 'idle',
+    PENDING: 'pending',
+    SUCCESS: 'success',
+    FAILED: 'failed',
+}
 
 const initialState = {
     items: teams,
-    team: '',
-    player: '',
-    hero: '',
-    request: ''
+    player: {id: '', nickname: ''},
+    hero: {id: '', name: ''},
+    patch: '7.32',
+    loading: STATUS.IDLE,
+    responseData: {},
 }
 
 export const dotaSlice = createSlice({
@@ -14,14 +23,26 @@ export const dotaSlice = createSlice({
     initialState,
     reducers: {
         setTeamPlayer: (state, action) => {
-            state.team = action.payload.title
-            state.player = action.payload.name
+            state.player = action.payload
         },
         setHero: (state, action) => {
-            console.log(action.payload.name)
-            state.hero = action.payload.name
+            state.hero = action.payload
         },
     },
+    extraReducers: (builder) => {
+        builder
+            .addCase(fetchPlayerStat.pending, (state) => {
+                state.loading = STATUS.PENDING
+            })
+            .addCase(fetchPlayerStat.fulfilled, (state, action) => {
+                state.responseData = action.payload
+                state.loading = STATUS.SUCCESS
+            })
+            .addCase(fetchPlayerStat.rejected, (state) => {
+                state.loading = STATUS.FAILED
+                state.items = []
+            })
+    }
 })
 
 export const {setTeamPlayer, setHero} = dotaSlice.actions
