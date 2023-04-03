@@ -35,7 +35,9 @@ export const dotaSlice = createSlice({
                 state.loading = STATUS.PENDING
             })
             .addCase(fetchPlayerStat.fulfilled, (state, action) => {
-                state.responseData = action.payload
+                if (action.payload){
+                    state.responseData = action.payload
+                }
                 state.loading = STATUS.SUCCESS
             })
             .addCase(fetchPlayerStat.rejected, (state) => {

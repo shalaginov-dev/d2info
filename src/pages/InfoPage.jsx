@@ -9,17 +9,18 @@ import Preloader from "../components/Helpers/Preloader";
 function InfoPage() {
     console.log('info render')
     const dispatch = useDispatch()
-    const {player, hero} = useSelector(state => state.dota)
+    const {player, hero, responseData} = useSelector(state => state.dota)
     const loading = useSelector(state => state.dota.loading)
 
     useEffect(() => {
-        dispatch(fetchPlayerStat({playerId: player.id, heroId: hero.id, patch: '7.32'}))
+        if (player.id !== '' && hero.id !== '')
+            dispatch(fetchPlayerStat({playerId: player.id, heroId: hero.id, patch: '7.32'}))
     }, [])
 
     return (
-        loading === STATUS.SUCCESS
-            ? <InfoBlock nickname={player.nickname} hero={hero.name}/>
-            : <Preloader/>
+        loading === STATUS.PENDING
+            ? <Preloader/>
+            : <InfoBlock nickname={player.nickname} hero={hero.name} responseData={responseData}/>
     )
 }
 

@@ -115,6 +115,18 @@ body {
       cursor: pointer;
       width: 60px;
     }
+    .heroes-title{
+      display: flex;
+      height: 22px;
+      img{
+        cursor: auto !important;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .heroes-title:not(:first-child){
+      margin-top: 30px;
+    }
   }
   .footer {
     display: flex;
