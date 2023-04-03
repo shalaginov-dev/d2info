@@ -22,9 +22,11 @@ export const TeamBlock = memo(({id, title, image, players}) =>{
                     />
                 </div>
                 {
-                    players.map((p, i) => <div className="team-block-player" key={i}>
-                        <Link onClick={() => {handlePickPlayer(p)}} to={`/heroes`}>{p.nickname}</Link>
-                    </div>)
+                    players.map((p, i) =>
+                        <Link className="team-block-player" key={i} onClick={() => {handlePickPlayer(p)}} to={`/heroes`}>
+                            <span>{p.nickname}</span>
+                        </Link>
+                    )
                 }
             </div>
         </div>

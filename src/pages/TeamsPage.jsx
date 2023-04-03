@@ -9,7 +9,7 @@ function TeamsPage() {
         <div className="container">
             <div className="content__items">
                 {
-                    items.map((p) => (<TeamBlock key={p.id} {...p}/>))
+                    items.map((team) => (<TeamBlock key={team.id} {...team}/>))
                 }
             </div>
         </div>

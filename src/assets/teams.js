@@ -12,8 +12,8 @@ export const teams = [
             {id: '152962063', nickname: 'miCKe'},
             {id: 'liquid2', nickname: 'Nisha'},
             {id: '73562326', nickname: 'zai'},
-            {id: 'liquid4', nickname: 'Boxi'},
-            {id: 'liquid5', nickname: 'Insania'},
+            {id: '77490514', nickname: 'Boxi'},
+            {id: '54580962', nickname: 'Insania'},
         ]
     },
     {
@@ -33,11 +33,11 @@ export const teams = [
         image: TeamSecret,
         title: 'TeamSecret',
         players: [
-            {id: 'secret1', nickname: 'Crystallis'},
-            {id: 'secret2', nickname: 'Armel'},
-            {id: 'secret3', nickname: 'BOOM'},
-            {id: 'secret4', nickname: 'yamich'},
-            {id: 'secret5', nickname: 'Puppey'},
+            {id: '127617979', nickname: 'Crystallis'},
+            {id: '164532005', nickname: 'Armel'},
+            {id: '190826739', nickname: 'BOOM'},
+            {id: '9403474', nickname: 'yamich'},
+            {id: '87278757', nickname: 'Puppey'},
         ]
     },
     {

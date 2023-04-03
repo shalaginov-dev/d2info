@@ -32,17 +32,19 @@ export const dotaSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchPlayerStat.pending, (state) => {
+                state.responseData = {}
                 state.loading = STATUS.PENDING
             })
             .addCase(fetchPlayerStat.fulfilled, (state, action) => {
                 if (action.payload){
                     state.responseData = action.payload
+                    state.loading = STATUS.SUCCESS
+                } else{
+                    state.loading = STATUS.FAILED
                 }
-                state.loading = STATUS.SUCCESS
             })
-            .addCase(fetchPlayerStat.rejected, (state) => {
+            .addCase(fetchPlayerStat.rejected, (state, action) => {
                 state.loading = STATUS.FAILED
-                state.items = []
             })
     }
 })

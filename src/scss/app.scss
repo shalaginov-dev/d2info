@@ -1,16 +1,17 @@
 @import './variables';
 @import './libs/normalize';
-
 @import './components/all';
 
 body {
-  background-color: $background;
+  background-image: url(https://images8.alphacoders.com/546/546896.jpg);
+  background-size: cover;
 }
 
 .wrapper {
   width: calc(100vw - 100px);
   height: 89vh;
-  background-color: #fff;
+  background-color: #837e7e;
+  background-color: rgba(72, 50, 50, 0.5);
   margin: 50px auto;
   border-radius: 10px;
   max-width: 1400px;
@@ -59,10 +60,10 @@ body {
       grid-template-columns: repeat(20, 1fr);
     }
     @media (max-width: 1060px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(10, 1fr);
     }
     @media (max-width: 730px) {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(6, 1fr);
     }
   }
 
@@ -115,7 +116,13 @@ body {
       cursor: pointer;
       width: 60px;
     }
+    .hero-icon{
+      @media (max-width: 1000px) {
+        width: 50px;
+      }
+    }
     .heroes-title{
+      color: white;
       display: flex;
       height: 22px;
       img{
