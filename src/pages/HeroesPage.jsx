@@ -12,8 +12,14 @@ import {memo, useEffect} from "react";
 
 export const HeroesPage = memo(() => {
     const dispatch = useDispatch()
-    const {player, hero} = useSelector(state => state.dota)
+    const {player, hero, searchValue} = useSelector(state => state.dota)
     const navigate = useNavigate()
+    // const words = [{name: 'spray'}, {name: 'limit'}, {name: 'elite'}, {name: 'exuberant'}, {name: 'destruction'}, {name: 'present'}]
+    // const result = words.filter(word => !word.name.indexOf('e'))
+    // console.log(result)
+    const filteredStrHeroes = strHeroes.filter(word => !word.name.toLowerCase().indexOf(searchValue))
+    const filteredAgiHeroes = agiHeroes.filter(word => !word.name.toLowerCase().indexOf(searchValue))
+    const filteredIntHeroes = intHeroes.filter(word => !word.name.toLowerCase().indexOf(searchValue))
 
 
     useEffect(() => {
@@ -32,7 +38,7 @@ export const HeroesPage = memo(() => {
                 </div>
                 <div>
                     {
-                        strHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
+                        filteredStrHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
                             <img className="hero-icon" onClick={() => {handlePickHero(hero)}} src={hero.img} alt="ww"/>
                         </Link>)
                     }
@@ -43,7 +49,7 @@ export const HeroesPage = memo(() => {
                 </div>
                 <div>
                     {
-                        agiHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
+                        filteredAgiHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
                             <img className="hero-icon" onClick={() => {
                                 handlePickHero(hero)
                             }} src={hero.img} alt="ww"/>
@@ -56,7 +62,7 @@ export const HeroesPage = memo(() => {
                 </div>
                 <div>
                     {
-                        intHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
+                        filteredIntHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
                             <img className="hero-icon" onClick={() => {handlePickHero(hero)}} src={hero.img} alt="ww"/>
                         </Link>)
                     }

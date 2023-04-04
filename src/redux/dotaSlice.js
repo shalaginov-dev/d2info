@@ -16,6 +16,7 @@ const initialState = {
     patch: '7.32',
     loading: STATUS.IDLE,
     responseData: {},
+    searchValue: ''
 }
 
 export const dotaSlice = createSlice({
@@ -27,6 +28,9 @@ export const dotaSlice = createSlice({
         },
         setHero: (state, action) => {
             state.hero = action.payload
+        },
+        setSearchValue(state, action) {
+            state.searchValue = action.payload
         },
     },
     extraReducers: (builder) => {
@@ -43,12 +47,12 @@ export const dotaSlice = createSlice({
                     state.loading = STATUS.FAILED
                 }
             })
-            .addCase(fetchPlayerStat.rejected, (state, action) => {
+            .addCase(fetchPlayerStat.rejected, (state) => {
                 state.loading = STATUS.FAILED
             })
     }
 })
 
-export const {setTeamPlayer, setHero} = dotaSlice.actions
+export const {setTeamPlayer, setHero, setSearchValue} = dotaSlice.actions
 
 export default dotaSlice.reducer
