@@ -7,8 +7,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h4{
+  h3{
     color: white;
     margin-bottom: 20px;
+  }
+  textarea{
+    font-size: 18px;
+    border-radius: 5px;
   }
 }

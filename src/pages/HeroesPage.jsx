@@ -32,38 +32,51 @@ export const HeroesPage = memo(() => {
     return (
         <div className="container">
             <div className="heroes-block">
-                <div className="heroes-title">
-                    <img src={str} alt="str"/>
-                    STRENGTH
-                </div>
+                {
+                    filteredStrHeroes.length !== 0 && <div className="heroes-title">
+                        <img src={str} alt="str"/>
+                        STRENGTH
+                    </div>
+                }
                 <div>
                     {
-                        filteredStrHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
-                            <img className="hero-icon" onClick={() => {handlePickHero(hero)}} src={hero.img} alt="ww"/>
-                        </Link>)
-                    }
-                </div>
-                <div className="heroes-title">
-                <img src={agi} alt="str"/>
-                    AGILITY
-                </div>
-                <div>
-                    {
-                        filteredAgiHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
+                        filteredStrHeroes.map((hero, i) => <Link key={i} onClick={() => {
+                        }} to={`/info`}>
                             <img className="hero-icon" onClick={() => {
                                 handlePickHero(hero)
                             }} src={hero.img} alt="ww"/>
                         </Link>)
                     }
                 </div>
-                <div className="heroes-title">
-                <img src={int} alt="str"/>
-                    INTELLIGENCE
-                </div>
+                {
+                    filteredAgiHeroes.length !== 0 && <div className="heroes-title">
+                        <img src={agi} alt="str"/>
+                        AGILITY
+                    </div>
+                }
                 <div>
                     {
-                        filteredIntHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
-                            <img className="hero-icon" onClick={() => {handlePickHero(hero)}} src={hero.img} alt="ww"/>
+                        filteredAgiHeroes.map((hero, i) => <Link key={i} onClick={() => {
+                        }} to={`/info`}>
+                            <img className="hero-icon" onClick={() => {
+                                handlePickHero(hero)
+                            }} src={hero.img} alt="ww"/>
+                        </Link>)
+                    }
+                </div>
+                {
+                    filteredIntHeroes.length !== 0 && <div className="heroes-title">
+                        <img src={int} alt="str"/>
+                        INTELLIGENCE
+                    </div>
+                }
+                <div>
+                    {
+                        filteredIntHeroes.map((hero, i) => <Link key={i} onClick={() => {
+                        }} to={`/info`}>
+                            <img className="hero-icon" onClick={() => {
+                                handlePickHero(hero)
+                            }} src={hero.img} alt="ww"/>
                         </Link>)
                     }
                 </div>

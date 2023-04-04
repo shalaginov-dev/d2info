@@ -26,16 +26,15 @@ const InfoBlock = memo(({nickname, hero, responseData}) => {
             /> :
             <div className="container">
                 <div className="info-block">
-                    <h4>{nickname} {hero} {7.32}</h4>
+                    <h3>{nickname} {hero} {7.32}</h3>
                     {
-                        <textarea autoFocus defaultValue={`
-                         ${responseData.nickname}
-                        wins: ${responseData.wins}
-                        losses: ${responseData.losses}
-                        total: ${responseData.total}
-                        winrate: ${responseData.winrate.toFixed(2)}
-                        kills: ${responseData.kills.toFixed(2)}
-                        `} name="info" id="" cols="30" rows="10"/>
+                        <textarea autoFocus defaultValue={`${responseData.nickname}
+wins: ${responseData.wins}
+losses: ${responseData.losses}
+total: ${responseData.total}
+winrate: ${responseData.winrate.toFixed(2)}
+kills: ${responseData.kills.toFixed(2)}
+                        `} name="info" id="" cols="50" rows="20"/>
                     }
                 </div>
             </div>
