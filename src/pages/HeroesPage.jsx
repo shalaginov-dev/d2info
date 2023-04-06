@@ -5,26 +5,26 @@ import str from '../assets/img/Strength_attribute_symbol.png'
 import agi from '../assets/img/Agility_attribute_symbol.png'
 import int from '../assets/img/Intelligence_attribute_symbol.png'
 
-import {setHero} from "../redux/dotaSlice";
+import {setHero, setSearchValue} from "../redux/dotaSlice";
 import {useDispatch, useSelector} from "react-redux";
 import {Link, useNavigate} from "react-router-dom";
 import {memo, useEffect} from "react";
 
 export const HeroesPage = memo(() => {
+
     const dispatch = useDispatch()
     const {player, hero, searchValue} = useSelector(state => state.dota)
     const navigate = useNavigate()
-    // const words = [{name: 'spray'}, {name: 'limit'}, {name: 'elite'}, {name: 'exuberant'}, {name: 'destruction'}, {name: 'present'}]
-    // const result = words.filter(word => !word.name.indexOf('e'))
-    // console.log(result)
+
     const filteredStrHeroes = strHeroes.filter(word => !word.name.toLowerCase().indexOf(searchValue))
     const filteredAgiHeroes = agiHeroes.filter(word => !word.name.toLowerCase().indexOf(searchValue))
     const filteredIntHeroes = intHeroes.filter(word => !word.name.toLowerCase().indexOf(searchValue))
 
-
     useEffect(() => {
+        dispatch(setSearchValue(''))
         if (player.id === '' && hero.id === '') navigate('/')
     }, [])
+
     const handlePickHero = (hero) => {
         dispatch(setHero({id: hero.id, name: hero.name}))
     }

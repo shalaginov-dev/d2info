@@ -1,0 +1,13 @@
+@import '../variables';
+
+.patch-block{
+  //background-color: #ab3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  .button{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

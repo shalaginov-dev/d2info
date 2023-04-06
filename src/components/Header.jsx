@@ -2,6 +2,7 @@ import {Link, useLocation} from "react-router-dom";
 
 import logoSvg from '../assets/img/pngwing.com (1).png'
 import {Search} from "./Helpers/Search";
+import {PatchDate} from "./PatchDate";
 
 
 export function Header() {
@@ -21,6 +22,9 @@ export function Header() {
                 </Link>
                 {
                     location.pathname === '/heroes' && <Search/>
+                }
+                {
+                    location.pathname === '/' && <PatchDate/>
                 }
                 <Link to="/">
                     <button onClick={()=>{window.history.back()}} className="button">

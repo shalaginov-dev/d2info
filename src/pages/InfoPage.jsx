@@ -16,7 +16,7 @@ function InfoPage() {
 
     useEffect(() => {
         if (player.id !== '' && hero.id !== '')
-            dispatch(fetchPlayerStat({playerId: player.id, heroId: hero.id, patch: '7.32'}))
+            dispatch(fetchPlayerStat({playerId: player.id, heroId: hero.id, patch: `&patch=7.32`}))
         else{
             navigate('/')
             }
