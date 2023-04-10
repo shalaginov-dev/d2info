@@ -12,7 +12,7 @@ function InfoPage() {
     const navigate = useNavigate()
 
     const dispatch = useDispatch()
-    const {player, hero, patch, afterDate, beforeDate, responseData} = useSelector(state => state.dota)
+    const {player, hero, patch, afterDate, beforeDate, url, responseData} = useSelector(state => state.dota)
     const loading = useSelector(state => state.dota.loading)
 
     const formatAfterDate = format(new Date(afterDate), 'DD[%2F]MM[%2F]YYYY')
@@ -35,7 +35,7 @@ function InfoPage() {
     return (
         loading === STATUS.PENDING || loading === STATUS.IDLE
             ? <Preloader/>
-            : <InfoBlock nickname={player.nickname} hero={hero.name} responseData={responseData} patch={patch}/>
+            : <InfoBlock nickname={player.nickname} hero={hero.name} responseData={responseData} patch={patch} url={url}/>
     )
 }
 

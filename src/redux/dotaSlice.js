@@ -16,6 +16,7 @@ const initialState = {
     patch: `&patch=7.32`,
     afterDate: `2010-01-01`,
     beforeDate: `2010-01-01`,
+    url: '',
     loading: STATUS.IDLE,
     responseData: {},
     searchValue: ''
@@ -39,6 +40,9 @@ export const dotaSlice = createSlice({
         },
         setBeforeDate: (state, action) => {
             state.beforeDate = action.payload
+        },
+        setUrl: (state, action) => {
+            state.url = action.payload
         },
         setSearchValue(state, action) {
             state.searchValue = action.payload
@@ -64,6 +68,6 @@ export const dotaSlice = createSlice({
     }
 })
 
-export const {setTeamPlayer, setHero, setPatch, setAfterDate, setBeforeDate, setSearchValue} = dotaSlice.actions
+export const {setTeamPlayer, setHero, setPatch, setAfterDate, setBeforeDate, setUrl, setSearchValue} = dotaSlice.actions
 
 export default dotaSlice.reducer

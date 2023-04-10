@@ -7,6 +7,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .url-block{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    button{
+      font-size: 12px;
+    }
+    p{
+      color: #6783ff;
+      height: 20px;
+      overflow: hidden;
+    }
+  }
   h3{
     color: white;
     margin-bottom: 20px;
@@ -14,5 +29,6 @@
   textarea{
     font-size: 18px;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
