@@ -4,7 +4,7 @@ import {setTeamPlayer} from "../redux/dotaSlice";
 import {memo} from "react";
 
 
-export const TeamBlock = memo(({id, title, image, players}) =>{
+export const TeamBlock = memo(({image, players}) => {
     const dispatch = useDispatch()
 
     const handlePickPlayer = (player) => {
@@ -23,7 +23,9 @@ export const TeamBlock = memo(({id, title, image, players}) =>{
                 </div>
                 {
                     players.map((p, i) =>
-                        <Link className="team-block-player" key={i} onClick={() => {handlePickPlayer(p)}} to={`/heroes`}>
+                        <Link className="team-block-player" key={i} onClick={() => {
+                            handlePickPlayer(p)
+                        }} to={`/heroes`}>
                             <span>{p.nickname}</span>
                         </Link>
                     )

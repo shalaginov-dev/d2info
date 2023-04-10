@@ -11,7 +11,6 @@ import {Link, useNavigate} from "react-router-dom";
 import {memo, useEffect} from "react";
 
 export const HeroesPage = memo(() => {
-
     const dispatch = useDispatch()
     const {player, hero, searchValue} = useSelector(state => state.dota)
     const navigate = useNavigate()

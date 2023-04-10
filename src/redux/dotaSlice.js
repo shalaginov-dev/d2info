@@ -13,7 +13,9 @@ const initialState = {
     items: teams,
     player: {id: '', nickname: ''},
     hero: {id: '', name: ''},
-    patch: '7.32',
+    patch: `&patch=7.32`,
+    afterDate: `2010-01-01`,
+    beforeDate: `2010-01-01`,
     loading: STATUS.IDLE,
     responseData: {},
     searchValue: ''
@@ -29,6 +31,15 @@ export const dotaSlice = createSlice({
         setHero: (state, action) => {
             state.hero = action.payload
         },
+        setPatch: (state, action) => {
+            state.patch = action.payload
+        },
+        setAfterDate: (state, action) => {
+            state.afterDate = action.payload
+        },
+        setBeforeDate: (state, action) => {
+            state.beforeDate = action.payload
+        },
         setSearchValue(state, action) {
             state.searchValue = action.payload
         },
@@ -40,10 +51,10 @@ export const dotaSlice = createSlice({
                 state.loading = STATUS.PENDING
             })
             .addCase(fetchPlayerStat.fulfilled, (state, action) => {
-                if (action.payload){
+                if (action.payload) {
                     state.responseData = action.payload
                     state.loading = STATUS.SUCCESS
-                } else{
+                } else {
                     state.loading = STATUS.FAILED
                 }
             })
@@ -53,6 +64,6 @@ export const dotaSlice = createSlice({
     }
 })
 
-export const {setTeamPlayer, setHero, setSearchValue} = dotaSlice.actions
+export const {setTeamPlayer, setHero, setPatch, setAfterDate, setBeforeDate, setSearchValue} = dotaSlice.actions
 
 export default dotaSlice.reducer

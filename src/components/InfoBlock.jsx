@@ -5,7 +5,7 @@ import {STATUS} from "../redux/dotaSlice";
 import {useNavigate} from "react-router-dom";
 
 
-const InfoBlock = memo(({nickname, hero, responseData}) => {
+const InfoBlock = memo(({nickname, hero, responseData, patch}) => {
     const [modalActive, setModalActive] = useState(false)
     const loading = useSelector(state => state.dota.loading)
     const navigate = useNavigate()
@@ -15,6 +15,14 @@ const InfoBlock = memo(({nickname, hero, responseData}) => {
             setModalActive(true)
         }
     }, [loading])
+    useEffect(() => {
+        if (hero.id === '') navigate('/')
+    }, [])
+
+    const ptch = patch.replace(/[^.\d]/g, '').split('')
+
+    if (ptch.length > 4) ptch.splice(4, 0, '__')
+    if (ptch.length > 9) ptch.splice(9, 0, '__')
 
 
     return (
@@ -26,7 +34,7 @@ const InfoBlock = memo(({nickname, hero, responseData}) => {
             /> :
             <div className="container">
                 <div className="info-block">
-                    <h3>{nickname} {hero} {7.32}</h3>
+                    <h3>{nickname} {hero} {ptch}</h3>
                     {
                         <textarea autoFocus defaultValue={`${responseData.nickname}
 wins: ${responseData.wins}

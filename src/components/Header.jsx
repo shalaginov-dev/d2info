@@ -6,7 +6,6 @@ import {PatchDate} from "./PatchDate";
 
 
 export function Header() {
-    // const loading = useSelector(state => state.dota.loading)
     const location = useLocation()
 
     return (
@@ -35,7 +34,6 @@ export function Header() {
                     </button>
                 </Link>
             </div>
-            {/*{loading === STATUS.PENDING && <LinearProgress/>}*/}
         </div>
 
     )
