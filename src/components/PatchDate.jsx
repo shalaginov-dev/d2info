@@ -40,13 +40,19 @@ export function PatchDate() {
                 setActive0(!active0)
             }} className={active0 ? `button button-patch` : 'button'}>7.30
             </button>
-            <div className="date">
-                <input type="date" defaultValue={'2010-01-01'} onChange={(e) => {
-                    dispatch(setAfterDate(e.currentTarget.value))
-                }}/>
-                <input type="date" defaultValue={date} onChange={(e) => {
-                    dispatch(setBeforeDate(e.currentTarget.value))
-                }}/>
+            <div className="date-block">
+                <div>
+                    <p>After Date Inclusive</p>
+                    <input type="date" defaultValue={'2010-01-01'} onChange={(e) => {
+                        dispatch(setAfterDate(e.currentTarget.value))
+                    }}/>
+                </div>
+                <div>
+                    <p>Before Date Inclusive</p>
+                    <input type="date" defaultValue={date} onChange={(e) => {
+                        dispatch(setBeforeDate(e.currentTarget.value))
+                    }}/>
+                </div>
             </div>
         </div>
     )
