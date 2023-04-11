@@ -10,6 +10,7 @@
   cursor: pointer;
   transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
   border: 1px solid transparent;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.4);
   @include noselect();
 
   &,

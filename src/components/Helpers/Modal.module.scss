@@ -29,6 +29,7 @@
   transform: scale(0.5);
   transition: 0.4s all;
   width: 50vw;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
   @media (max-width: 760px) {
     width: 80vw;
     padding: 10px;

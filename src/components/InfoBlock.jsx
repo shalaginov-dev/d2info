@@ -53,7 +53,7 @@ wins: ${responseData.wins}
 losses: ${responseData.losses}
 total: ${responseData.total}
 win rate: ${responseData.winrate.toFixed(2)}
-kills: ${responseData.kills.toFixed(2)}`} name="info" id="" cols="50" rows="20"/>
+kills: ${responseData.kills.toFixed(2)}`} name="info" id="" cols="55" rows="20"/>
                     }
                 </div>
             </div>
