@@ -14,9 +14,8 @@ export const TeamBlock = memo(({image, players}) => {
     return (
         <div className="team-block-wrapper">
             <div className="team-block">
-                <div className="team-block-link">
+                <div className="team-block-image">
                     <img
-                        className="team-block__image"
                         src={image}
                         alt="teamLogo"
                     />
