@@ -30,54 +30,60 @@ export const HeroesPage = memo(() => {
 
     return (
         <div className="container">
-            <div className="heroes-block">
-                {
-                    filteredStrHeroes.length !== 0 && <div className="heroes-title">
-                        <img src={str} alt="str"/>
-                        STRENGTH
-                    </div>
-                }
-                <div>
+            <div className="heroes-block-wrapper">
+                <div className="heroes-block">
                     {
-                        filteredStrHeroes.map((hero, i) => <Link key={i} onClick={() => {
-                        }} to={`/info`}>
-                            <img className="hero-icon" onClick={() => {
-                                handlePickHero(hero)
-                            }} src={hero.img} alt="ww"/>
-                        </Link>)
+                        filteredStrHeroes.length !== 0 && <div className="heroes-title">
+                            <img src={str} alt="str"/>
+                            STRENGTH
+                        </div>
                     }
+                    <div>
+                        {
+                            filteredStrHeroes.map((hero, i) => <Link key={i} onClick={() => {
+                            }} to={`/info`}>
+                                <img className="hero-icon" onClick={() => {
+                                    handlePickHero(hero)
+                                }} src={hero.img} alt="ww"/>
+                            </Link>)
+                        }
+                    </div>
                 </div>
-                {
-                    filteredAgiHeroes.length !== 0 && <div className="heroes-title">
-                        <img src={agi} alt="str"/>
-                        AGILITY
-                    </div>
-                }
-                <div>
+                <div className="heroes-block">
                     {
-                        filteredAgiHeroes.map((hero, i) => <Link key={i} onClick={() => {
-                        }} to={`/info`}>
-                            <img className="hero-icon" onClick={() => {
-                                handlePickHero(hero)
-                            }} src={hero.img} alt="ww"/>
-                        </Link>)
+                        filteredAgiHeroes.length !== 0 && <div className="heroes-title">
+                            <img src={agi} alt="str"/>
+                            AGILITY
+                        </div>
                     }
+                    <div>
+                        {
+                            filteredAgiHeroes.map((hero, i) => <Link key={i} onClick={() => {
+                            }} to={`/info`}>
+                                <img className="hero-icon" onClick={() => {
+                                    handlePickHero(hero)
+                                }} src={hero.img} alt="ww"/>
+                            </Link>)
+                        }
+                    </div>
                 </div>
-                {
-                    filteredIntHeroes.length !== 0 && <div className="heroes-title">
-                        <img src={int} alt="str"/>
-                        INTELLIGENCE
-                    </div>
-                }
-                <div>
+                <div className="heroes-block">
                     {
-                        filteredIntHeroes.map((hero, i) => <Link key={i} onClick={() => {
-                        }} to={`/info`}>
-                            <img className="hero-icon" onClick={() => {
-                                handlePickHero(hero)
-                            }} src={hero.img} alt="ww"/>
-                        </Link>)
+                        filteredIntHeroes.length !== 0 && <div className="heroes-title">
+                            <img src={int} alt="str"/>
+                            INTELLIGENCE
+                        </div>
                     }
+                    <div>
+                        {
+                            filteredIntHeroes.map((hero, i) => <Link key={i} onClick={() => {
+                            }} to={`/info`}>
+                                <img className="hero-icon" onClick={() => {
+                                    handlePickHero(hero)
+                                }} src={hero.img} alt="ww"/>
+                            </Link>)
+                        }
+                    </div>
                 </div>
             </div>
         </div>
