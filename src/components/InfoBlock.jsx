@@ -48,8 +48,7 @@ const InfoBlock = memo(({nickname, hero, responseData, patch, url}) => {
                         </button>
                     </div>
                     {
-                        <textarea autoFocus defaultValue={`${responseData.nickname}
-wins: ${responseData.wins}
+                        <textarea autoFocus defaultValue={`wins: ${responseData.wins}
 losses: ${responseData.losses}
 total: ${responseData.total}
 win rate: ${responseData.winrate.toFixed(2)}

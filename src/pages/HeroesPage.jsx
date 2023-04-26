@@ -40,11 +40,8 @@ export const HeroesPage = memo(() => {
                     }
                     <div>
                         {
-                            filteredStrHeroes.map((hero, i) => <Link key={i} onClick={() => {
-                            }} to={`/info`}>
-                                <img className="hero-icon" onClick={() => {
-                                    handlePickHero(hero)
-                                }} src={hero.img} alt="ww"/>
+                            filteredStrHeroes.map((hero, i) => <Link key={i} onClick={() => {}} to={`/info`}>
+                                <img className="hero-icon" onClick={() => {handlePickHero(hero)}} src={hero.img} alt="ww"/>
                             </Link>)
                         }
                     </div>

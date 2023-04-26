@@ -26,7 +26,7 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  min-height: 85vh;
+  min-height: 75vh;
   padding: 40px 0;
 
   &__error-info {
@@ -115,38 +115,46 @@ body {
   width: $container-width;
   margin: 0 auto;
 
-  .heroes-block-wrapper{
-    img{
+  .heroes-block-wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    .heroes-block {
+      margin: 20px 0;
+    }
+
+    .heroes-block:not(:first-child) {
+      .heroes-title {
+        margin-top: 55px;
+      }
+    }
+
+    .hero-icon {
       cursor: pointer;
       width: 60px;
-    }
-    .hero-icon{
+      margin: 3px;
+      //border: 0.5px #858586 solid;
+      box-shadow: 0 0 30px rgb(0, 0, 0);
       @media (max-width: 1000px) {
         width: 50px;
       }
     }
-    .heroes-title{
+
+    .heroes-title {
       margin-bottom: 3px;
       color: white;
       display: flex;
       height: 22px;
-      img{
+
+      img {
         margin-right: 5px;
         cursor: auto !important;
         width: 20px;
         height: 20px;
       }
     }
-    .heroes-block{
-      margin: 20px 0;
-    }
-    .heroes-block:not(:first-child){
-      .heroes-title{
-        margin-top: 45px;
-      }
-    }
-
   }
+
   .footer {
     display: flex;
     justify-content: space-between;
