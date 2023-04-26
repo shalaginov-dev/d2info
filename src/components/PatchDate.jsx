@@ -12,7 +12,7 @@ export function PatchDate() {
 
     useEffect(() => {
         return () => {
-            dispatch(setPatch(`${active2 ? '&patch=7.32' : ''}${active1 ? '&patch=7.31' : ''}${active0 ? '&patch=7.30' : ''}`))
+            dispatch(setPatch(`${active2 ? '&patch=7.33' : ''}${active1 ? '&patch=7.32' : ''}${active0 ? '&patch=7.31' : ''}`))
         }
     }, [active2, active1, active0])
 
@@ -28,17 +28,14 @@ export function PatchDate() {
 
     return (
         <div className="patch-block">
-            <button onClick={() => {
-                setActive2(!active2)
-            }} className={active2 ? `button button-patch` : 'button'}>7.32
+            <button onClick={() => {setActive2(!active2)}}
+                    className={active2 ? `button button-patch` : 'button'}>7.33
             </button>
-            <button onClick={() => {
-                setActive1(!active1)
-            }} className={active1 ? `button button-patch` : 'button'}>7.31
+            <button onClick={() => {setActive1(!active1)}}
+                    className={active1 ? `button button-patch` : 'button'}>7.32
             </button>
-            <button onClick={() => {
-                setActive0(!active0)
-            }} className={active0 ? `button button-patch` : 'button'}>7.30
+            <button onClick={() => {setActive0(!active0)}}
+                    className={active0 ? `button button-patch` : 'button'}>7.31
             </button>
             <div className="date-block">
                 <div>

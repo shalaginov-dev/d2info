@@ -13,7 +13,7 @@ const initialState = {
     items: teams,
     player: {id: '', nickname: ''},
     hero: {id: '', name: ''},
-    patch: `&patch=7.32`,
+    patch: ``,
     afterDate: `2010-01-01`,
     beforeDate: `2010-01-01`,
     url: '',
