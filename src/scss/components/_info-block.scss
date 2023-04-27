@@ -7,32 +7,38 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  h3{
+    color: white;
+    margin-bottom: 20px;
+  }
+  button{
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+  }
   .url-block{
     width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    button{
-      padding: 8px 16px;
-      font-size: 13px;
-      font-weight: 600;
-    }
     p{
       color: #6783ff;
       height: 20px;
       overflow: hidden;
     }
   }
-  h3{
-    color: white;
-    margin-bottom: 20px;
-  }
-  textarea{
-    font-size: 20px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+  .json-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 500px;
+    textarea{
+      font-size: 20px;
+      border-radius: 5px;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    }
   }
 }

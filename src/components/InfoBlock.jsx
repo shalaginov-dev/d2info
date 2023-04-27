@@ -25,38 +25,42 @@ const InfoBlock = memo(({nickname, hero, responseData, patch, url}) => {
     if (ptch.length > 4) ptch.splice(4, 0, '__')
     if (ptch.length > 9) ptch.splice(9, 0, '__')
 
-    const handleCopyClick = () => {
+    const handleCopyUrlClick = () => {
         copy(url)
+    }
+    const handleCopyJSONClick = () => {
+        copy(JSON.stringify(responseData))
     }
     return (
         loading === STATUS.FAILED ? <SimpleModal
                 active={modalActive}
-                onConfirmCLick={() => {
-                    navigate('/')
-                }}
+                onConfirmCLick={() => {navigate('/')}}
                 value={'Info not found =('}
-                onActiveModalClick={() => {
-                    navigate('/')
-                }}
-            /> :
-            <div className="container">
+                onActiveModalClick={() => {navigate('/')}}/>
+            : <div className="container">
                 <div className="info-block">
                     <h3>{nickname} {hero} {ptch}</h3>
                     <div className="url-block">
                         <p>{url}</p>
-                        <button className="button" onClick={handleCopyClick}>Copy Link
+                        <button className="button" onClick={handleCopyUrlClick}>Copy Link
                         </button>
                     </div>
-                    {
-                        <textarea autoFocus defaultValue={`wins: ${responseData.wins}
-losses: ${responseData.losses}
-total: ${responseData.total}
-win rate: ${responseData.winrate.toFixed(2)}
-kills: ${responseData.kills.toFixed(2)}`} name="info" id="" cols="48" rows="20"/>
-                    }
+                    <div className="json-block">
+                        {
+                            <textarea autoFocus defaultValue={JSON.stringify(responseData)} name="info" id="" cols="36" rows="18"/>
+                        }
+                        <button className="button" onClick={handleCopyJSONClick}>Copy JSON
+                        </button>
+                    </div>
                 </div>
             </div>
     )
 })
+
+//     `wins: ${responseData.wins}
+// losses: ${responseData.losses}
+// total: ${responseData.total}
+// win rate: ${responseData.winrate.toFixed(2)}
+// kills: ${responseData.kills.toFixed(2)}`
 
 export default InfoBlock
