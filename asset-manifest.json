@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/d2info/static/css/main.f5d3722b.css",
-    "main.js": "/d2info/static/js/main.61acf9a3.js",
+    "main.css": "/d2info/static/css/main.fb438946.css",
+    "main.js": "/d2info/static/js/main.50cc3bc3.js",
     "static/media/546896.jpg": "/d2info/static/media/546896.b9d63d64b3ea8ac3f4bb.jpg",
     "static/media/pngwing.com (1).png": "/d2info/static/media/pngwing.com (1).4090e33735ffbe51905c.png",
     "static/media/Alchemist_icon.png": "/d2info/static/media/Alchemist_icon.9b4188aac7701a83a0c4.png",
@@ -10,6 +10,7 @@
     "static/media/TeamOG.png": "/d2info/static/media/TeamOG.2b5d45244a2864544fab.png",
     "static/media/Aster.png": "/d2info/static/media/Aster.d4102c1955790f8e0cec.png",
     "static/media/TeamSecret.png": "/d2info/static/media/TeamSecret.10b3bb0b44969ff33dcb.png",
+    "static/media/D2Hustlers.png": "/d2info/static/media/D2Hustlers.cafb10382357ac609691.png",
     "static/media/Slark_icon.png": "/d2info/static/media/Slark_icon.8367dd9fc8313d8136ae.png",
     "static/media/Skywrath_Mage_icon.png": "/d2info/static/media/Skywrath_Mage_icon.cdf62222aa4ec0fb3824.png",
     "static/media/Dark_Seer_icon.png": "/d2info/static/media/Dark_Seer_icon.71ff2c3adf32f57036d3.png",
@@ -63,6 +64,7 @@
     "static/media/Treant_Protector_icon.png": "/d2info/static/media/Treant_Protector_icon.740750a6f3a1637f58e6.png",
     "static/media/Faceless_Void_icon.png": "/d2info/static/media/Faceless_Void_icon.3033efadca29d0bbbb73.png",
     "static/media/Beastmaster_icon.png": "/d2info/static/media/Beastmaster_icon.bfb62a6ed57d6b113f75.png",
+    "static/media/BoomEsports.png": "/d2info/static/media/BoomEsports.a7f5a909b8894e9de6e9.png",
     "static/media/Dark_Willow_icon.png": "/d2info/static/media/Dark_Willow_icon.1a7288540f362aa56e56.png",
     "static/media/Lifestealer_icon.png": "/d2info/static/media/Lifestealer_icon.e6e2a8bd907360092dc7.png",
     "static/media/Underlord_icon.png": "/d2info/static/media/Underlord_icon.213ee0c255de9d42121d.png",
@@ -135,16 +137,17 @@
     "static/media/Execration.png": "/d2info/static/media/Execration.25a25c2d6db914732399.png",
     "static/media/Sven_icon.png": "/d2info/static/media/Sven_icon.a8b363a3fbede44f9150.png",
     "static/media/Io_icon.png": "/d2info/static/media/Io_icon.0bf55dd9b860b8d7de61.png",
-    "static/media/ExtremeGaming.png": "/d2info/static/media/ExtremeGaming.f2b5ecf4fadf2ead37c1.png",
+    "static/media/QuestEsports.png": "/d2info/static/media/QuestEsports.65d373bd9394b9d51383.png",
+    "static/media/XtremeGaming.png": "/d2info/static/media/XtremeGaming.f2b5ecf4fadf2ead37c1.png",
     "static/media/TeamSpirit.png": "/d2info/static/media/TeamSpirit.887364bb92415777901f.png",
     "static/media/LGDGaming.png": "/d2info/static/media/LGDGaming.cc7804d4dfde7339193e.png",
     "static/media/GaiminGladiators1.png": "/d2info/static/media/GaiminGladiators1.7bfb72901b7dddecf76d.png",
     "index.html": "/d2info/index.html",
-    "main.f5d3722b.css.map": "/d2info/static/css/main.f5d3722b.css.map",
-    "main.61acf9a3.js.map": "/d2info/static/js/main.61acf9a3.js.map"
+    "main.fb438946.css.map": "/d2info/static/css/main.fb438946.css.map",
+    "main.50cc3bc3.js.map": "/d2info/static/js/main.50cc3bc3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5d3722b.css",
-    "static/js/main.61acf9a3.js"
+    "static/css/main.fb438946.css",
+    "static/js/main.50cc3bc3.js"
   ]
 }
