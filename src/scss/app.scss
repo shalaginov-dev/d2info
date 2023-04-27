@@ -114,6 +114,24 @@ body {
 .container {
   width: $container-width;
   margin: 0 auto;
+  position: relative;
+
+  .region-weu {
+    position: absolute;
+    top: 130px;
+    left: -47px;
+    font: 24px bold;
+    color: $red;
+    transform: rotate(310deg)
+  }
+  .region-sea {
+    position: absolute;
+    top: 394px;
+    left: -44px;
+    font: 24px bold;
+    color: $red;
+    transform: rotate(310deg)
+  }
 
   .heroes-block-wrapper {
     width: 90%;

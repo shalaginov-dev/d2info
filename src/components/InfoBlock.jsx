@@ -66,8 +66,8 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
                     </div>
                     <div className="json-block">
                         {
-                            <textarea autoFocus defaultValue={JSON.stringify(fixedInfo)} name="info" id="" cols="36"
-                                      rows="18"/>
+                            <textarea autoFocus defaultValue={JSON.stringify(fixedInfo)} name="info" id="" cols="76"
+                                      rows="8"/>
                         }
                         <button className="button" onClick={handleCopyJSONClick}>Copy JSON
                         </button>
