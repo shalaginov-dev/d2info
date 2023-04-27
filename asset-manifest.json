@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/d2info/static/css/main.fb438946.css",
-    "main.js": "/d2info/static/js/main.5cfa7cbb.js",
+    "main.css": "/d2info/static/css/main.68f546fb.css",
+    "main.js": "/d2info/static/js/main.3851be7c.js",
     "static/media/546896.jpg": "/d2info/static/media/546896.b9d63d64b3ea8ac3f4bb.jpg",
     "static/media/pngwing.com (1).png": "/d2info/static/media/pngwing.com (1).4090e33735ffbe51905c.png",
     "static/media/Alchemist_icon.png": "/d2info/static/media/Alchemist_icon.9b4188aac7701a83a0c4.png",
@@ -143,11 +143,11 @@
     "static/media/LGDGaming.png": "/d2info/static/media/LGDGaming.cc7804d4dfde7339193e.png",
     "static/media/GaiminGladiators1.png": "/d2info/static/media/GaiminGladiators1.7bfb72901b7dddecf76d.png",
     "index.html": "/d2info/index.html",
-    "main.fb438946.css.map": "/d2info/static/css/main.fb438946.css.map",
-    "main.5cfa7cbb.js.map": "/d2info/static/js/main.5cfa7cbb.js.map"
+    "main.68f546fb.css.map": "/d2info/static/css/main.68f546fb.css.map",
+    "main.3851be7c.js.map": "/d2info/static/js/main.3851be7c.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb438946.css",
-    "static/js/main.5cfa7cbb.js"
+    "static/css/main.68f546fb.css",
+    "static/js/main.3851be7c.js"
   ]
 }
