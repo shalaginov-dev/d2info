@@ -1,15 +1,16 @@
 @import '../variables';
 
-.stat-block{
+.stat-block {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   width: 500px;
   height: 580px;
-  background-color: rgba(150, 150,150, 50%);
+  background-color: rgba(150, 150, 150, 50%);
   border-radius: 10px;
-  &__info{
+
+  &__info {
     margin-top: 30px;
     height: 430px;
     width: 300px;
@@ -21,13 +22,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 120px;
+  width: 125px;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-  .team-title{
+
+  .team-title {
     font-weight: 600;
     position: absolute;
     height: 36px;
@@ -38,26 +40,31 @@
     color: #6bb2ee;
     //color: #50a4f8;
   }
-  &-player:hover{
-    background-color: rgba(255, 255, 255, 0.3);
-    span{
-      font-size: 21px;
-      color: rgb(255, 255, 255);
-    }
-  }
+
   &-player {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     display: inline-block;
-    width: 120px;
+    width: 125px;
     height: 25px;
     //background-color: rgba(255, 255, 255, 0.15);
     margin-bottom: 2px;
     border-radius: 3px;
-    span{
+
+    span {
       color: rgba(255, 255, 255, 0.85);
     }
   }
+
+  &-player:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+
+    span {
+      font-size: 19px;
+      color: rgb(255, 255, 255);
+    }
+  }
+
 
   &-image {
     border-radius: 5px 5px 0 0;
@@ -67,18 +74,20 @@
     display: flex;
     justify-content: center;
     background: rgba(255, 255, 255, 0.4);
-    span{
+
+    span {
       width: 30px;
       word-wrap: break-word;
     }
-    img{
+
+    img {
       object-fit: contain;
       width: 60px;
     }
   }
 
   &-wrapper {
-    margin: 25px 10px ;
+    margin: 25px 10px;
     display: flex;
     justify-content: center;
   }

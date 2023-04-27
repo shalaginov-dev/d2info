@@ -18,7 +18,7 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
         kda: Number(responseData.kda.toFixed(2)),
         gpm: Number(responseData.gpm.toFixed(0)),
         xpm: Number(responseData.xpm.toFixed(0)),
-        avgKal: Number(responseData.avgKal.toFixed(2)),
+        avgKal: responseData.avgKal.toFixed(2),
         lastHits: Number(responseData.lastHits.toFixed(0)),
         denies: Number(responseData.denies.toFixed(0)),
         teamname: player.teamName,
@@ -49,9 +49,13 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
     return (
         loading === STATUS.FAILED ? <SimpleModal
                 active={modalActive}
-                onConfirmCLick={() => {navigate('/')}}
+                onConfirmCLick={() => {
+                    navigate('/')
+                }}
                 value={'Info not found =('}
-                onActiveModalClick={() => {navigate('/')}}/>
+                onActiveModalClick={() => {
+                    navigate('/')
+                }}/>
             : <div className="container">
                 <div className="info-block">
                     <h3>{player.nickname} {hero} {ptch}</h3>
