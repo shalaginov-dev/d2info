@@ -17,6 +17,7 @@
 }
 
 .team-block {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,8 +27,18 @@
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  .team-title{
+    font-weight: 600;
+    position: absolute;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    top: -40px;
+    color: #6bb2ee;
+    //color: #50a4f8;
+  }
   &-player:hover{
-    //transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.3);
     span{
       font-size: 21px;
@@ -67,7 +78,7 @@
   }
 
   &-wrapper {
-    margin: 20px 10px ;
+    margin: 25px 10px ;
     display: flex;
     justify-content: center;
   }

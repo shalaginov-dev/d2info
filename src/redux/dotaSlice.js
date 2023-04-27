@@ -11,7 +11,7 @@ export const STATUS = {
 
 const initialState = {
     items: teams,
-    player: {id: '', nickname: ''},
+    player: {id: '', nickname: '', position: '', teamName: ''},
     hero: {id: '', name: ''},
     patch: ``,
     afterDate: `2010-01-01`,

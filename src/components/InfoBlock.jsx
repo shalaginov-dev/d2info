@@ -6,10 +6,27 @@ import {useNavigate} from "react-router-dom";
 import copy from 'copy-to-clipboard'
 
 
-const InfoBlock = memo(({nickname, hero, responseData, patch, url}) => {
+const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
     const [modalActive, setModalActive] = useState(false)
     const loading = useSelector(state => state.dota.loading)
     const navigate = useNavigate()
+
+    console.log(responseData)
+    if (responseData){
+
+    }
+    const fixedInfo = {...responseData,
+        winrate: Number((responseData.winrate * 100).toFixed(0)),
+        kda: Number(responseData.kda.toFixed(2)),
+        gpm: Number(responseData.gpm.toFixed(0)),
+        xpm: Number(responseData.xpm.toFixed(0)),
+        avgKal: Number(responseData.avgKal.toFixed(2)),
+        lastHits: Number(responseData.lastHits.toFixed(0)),
+        denies: Number(responseData.denies.toFixed(0)),
+        teamname: player.teamName,
+        position: player.position,
+    }
+    console.log(fixedInfo)
 
     useEffect(() => {
         if (loading === STATUS.FAILED) {
@@ -31,6 +48,7 @@ const InfoBlock = memo(({nickname, hero, responseData, patch, url}) => {
     const handleCopyJSONClick = () => {
         copy(JSON.stringify(responseData))
     }
+
     return (
         loading === STATUS.FAILED ? <SimpleModal
                 active={modalActive}
@@ -39,7 +57,7 @@ const InfoBlock = memo(({nickname, hero, responseData, patch, url}) => {
                 onActiveModalClick={() => {navigate('/')}}/>
             : <div className="container">
                 <div className="info-block">
-                    <h3>{nickname} {hero} {ptch}</h3>
+                    <h3>{player.nickname} {hero} {ptch}</h3>
                     <div className="url-block">
                         <p>{url}</p>
                         <button className="button" onClick={handleCopyUrlClick}>Copy Link

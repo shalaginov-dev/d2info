@@ -35,7 +35,7 @@ function InfoPage() {
     return (
         loading === STATUS.PENDING || loading === STATUS.IDLE
             ? <Preloader/>
-            : <InfoBlock nickname={player.nickname} hero={hero.name} responseData={responseData} patch={patch} url={url}/>
+            : <InfoBlock player={player} hero={hero.name} responseData={responseData} patch={patch} url={url}/>
     )
 }
 
