@@ -63,18 +63,18 @@ export const teams = [
             {id: '10366616', nickname: 'Sneyking', position: 'sup'},
         ]
     },
-    {
-        id: '4',
-        image: EvilGeniuses,
-        title: 'Evil Geniuses',
-        players: [
-            {id: '339235645', nickname: 'Pakazs', position: 'carry'},
-            {id: '153836240', nickname: 'Chris Luck', position: 'mid'},
-            {id: '292921272', nickname: 'Wisper', position: 'offlane'},
-            {id: '155332459', nickname: 'Matthew', position: 'sup'},
-            {id: '117089283', nickname: 'Pandaboo', position: 'sup'},
-        ]
-    },
+    // {
+    //     id: '4',
+    //     image: EvilGeniuses,
+    //     title: 'Evil Geniuses',
+    //     players: [
+    //         {id: '339235645', nickname: 'Pakazs', position: 'carry'},
+    //         {id: '153836240', nickname: 'Chris Luck', position: 'mid'},
+    //         {id: '292921272', nickname: 'Wisper', position: 'offlane'},
+    //         {id: '155332459', nickname: 'Matthew', position: 'sup'},
+    //         {id: '117089283', nickname: 'Pandaboo', position: 'sup'},
+    //     ]
+    // },
     {
         id: '5',
         image: TeamSecret,
@@ -87,54 +87,42 @@ export const teams = [
             {id: '87278757', nickname: 'Puppey', position: 'sup'},
         ]
     },
-    {
-        id: '6',
-        image: TeamSpirit,
-        title: 'Team Spirit',
-        players: [
-            {id: '321580662', nickname: 'Yatoro', position: 'carry'},
-            {id: '106305042', nickname: 'Larl', position: 'mid'},
-            {id: '302214028', nickname: 'Collapse', position: 'offlane'},
-            {id: '256156323', nickname: 'Mira', position: 'sup'},
-            {id: '113331514', nickname: 'Miposhka', position: 'sup'},
-        ]
-    },
-    {
-        id: '7',
-        image: LGDGaming,
-        title: 'PSG.LGD',
-        players: [
-            {id: '320252024', nickname: 'shiro', position: 'carry'},
-            {id: '173978074', nickname: 'NothingToSay', position: 'mid'},
-            {id: '147767183', nickname: 'zeal', position: 'offlane'},
-            {id: '150961567', nickname: 'planet', position: 'sup'},
-            {id: '111114687', nickname: 'y`', position: 'sup'},
-        ]
-    },
-    {
-        id: '8',
-        image: Beastcoast,
-        title: 'Beastcoast',
-        players: [
-            {id: '164685175', nickname: 'K1', position: 'carry'},
-            {id: '352545711', nickname: 'DarkMago', position: 'mid'},
-            {id: '408729743', nickname: 'Sacred', position: 'offlane'},
-            {id: '157989498', nickname: 'Scofield', position: 'sup'},
-            {id: '119631156', nickname: 'Stinger', position: 'sup'},
-        ]
-    },
-    {
-        id: '9',
-        image: TalonEsports,
-        title: 'Talon Esports',
-        players: [
-            {id: '375507918', nickname: '23savage', position: 'carry'},
-            {id: '301750126', nickname: 'Mikoto', position: 'mid'},
-            {id: '100471531', nickname: 'Jabz', position: 'offlane'},
-            {id: '193815691', nickname: 'Q', position: 'sup'},
-            {id: '101259972', nickname: 'Oli', position: 'sup'},
-        ]
-    },
+    // {
+    //     id: '6',
+    //     image: TeamSpirit,
+    //     title: 'Team Spirit',
+    //     players: [
+    //         {id: '321580662', nickname: 'Yatoro', position: 'carry'},
+    //         {id: '106305042', nickname: 'Larl', position: 'mid'},
+    //         {id: '302214028', nickname: 'Collapse', position: 'offlane'},
+    //         {id: '256156323', nickname: 'Mira', position: 'sup'},
+    //         {id: '113331514', nickname: 'Miposhka', position: 'sup'},
+    //     ]
+    // },
+    // {
+    //     id: '7',
+    //     image: LGDGaming,
+    //     title: 'PSG.LGD',
+    //     players: [
+    //         {id: '320252024', nickname: 'shiro', position: 'carry'},
+    //         {id: '173978074', nickname: 'NothingToSay', position: 'mid'},
+    //         {id: '147767183', nickname: 'zeal', position: 'offlane'},
+    //         {id: '150961567', nickname: 'planet', position: 'sup'},
+    //         {id: '111114687', nickname: 'y`', position: 'sup'},
+    //     ]
+    // },
+    // {
+    //     id: '8',
+    //     image: Beastcoast,
+    //     title: 'Beastcoast',
+    //     players: [
+    //         {id: '164685175', nickname: 'K1', position: 'carry'},
+    //         {id: '352545711', nickname: 'DarkMago', position: 'mid'},
+    //         {id: '408729743', nickname: 'Sacred', position: 'offlane'},
+    //         {id: '157989498', nickname: 'Scofield', position: 'sup'},
+    //         {id: '119631156', nickname: 'Stinger', position: 'sup'},
+    //     ]
+    // },
     {
         id: '10',
         image: OG,
@@ -145,78 +133,6 @@ export const teams = [
             {id: '56351509', nickname: 'DM', position: 'offlane'},
             {id: '401792574', nickname: 'Taiga', position: 'sup'},
             {id: '117483894', nickname: 'Chu', position: 'sup'},
-        ]
-    },
-    {
-        id: '11',
-        image: ShopifyRebellion,
-        title: 'Shopify Rebellion',
-        players: [
-            {id: '86745912', nickname: 'Arteezy', position: 'carry'},
-            {id: '154715080', nickname: 'Abed', position: 'mid'},
-            {id: '126212866', nickname: 'SabeRLight-', position: 'offlane'},
-            {id: '25907144', nickname: 'Cr1t-', position: 'sup'},
-            {id: '94155156', nickname: 'Fly', position: 'sup'},
-        ]
-    },
-    {
-        id: '12',
-        image: Aster,
-        title: 'Aster',
-        players: [
-            {id: '148215639', nickname: 'Monet', position: 'carry'},
-            {id: '255219872', nickname: 'Xwy', position: 'mid'},
-            {id: '129958758', nickname: 'Xxs', position: 'offlane'},
-            {id: '207829314', nickname: 'BoBoKa', position: 'sup'},
-            {id: '183378746', nickname: '皮球', position: 'sup'},
-        ]
-    },
-    {
-        id: '13',
-        image: TSM,
-        title: 'TSM',
-        players: [
-            {id: '97658618', nickname: 'Timado', position: 'carry'},
-            {id: '238239590', nickname: 'Bryle', position: 'mid'},
-            {id: '184620877', nickname: 'kasane', position: 'offlane'},
-            {id: '346412363', nickname: 'Ari', position: 'sup'},
-            {id: '136829091', nickname: 'Whitemon', position: 'sup'},
-        ]
-    },
-    {
-        id: '14',
-        image: XtremeGaming,
-        title: 'Xtreme Gaming',
-        players: [
-            {id: '206642367', nickname: 'Ghost', position: 'carry'},
-            {id: '137193239', nickname: 'Paparazi', position: 'mid'},
-            {id: '138857296', nickname: 'JT-', position: 'offlane'},
-            {id: '139876032', nickname: 'Kaka', position: 'sup'},
-            {id: '143693439', nickname: 'Dy', position: 'sup'},
-        ]
-    },
-    {
-        id: '15',
-        image: VirtusPro,
-        title: 'Virtus.pro',
-        players: [
-            {id: '172099728', nickname: 'Kiritych', position: 'carry'},
-            {id: '123023873', nickname: 'squad1x', position: 'mid'},
-            {id: '195108598', nickname: 'Noticed', position: 'offlane'},
-            {id: '145065875', nickname: 'sayuw', position: 'sup'},
-            {id: '94049589', nickname: 'Fng', position: 'sup'},
-        ]
-    },
-    {
-        id: '16',
-        image: Execration,
-        title: 'Execration',
-        players: [
-            {id: '389022189', nickname: 'Palos', position: 'carry'},
-            {id: '173378701', nickname: 'Bob', position: 'mid'},
-            {id: '337575662', nickname: 'Tino', position: 'offlane'},
-            {id: '399862798', nickname: 'Shanks', position: 'sup'},
-            {id: '156029808', nickname: 'BDz', position: 'sup'},
         ]
     },
     {
@@ -256,6 +172,90 @@ export const teams = [
             {id: '217472313', nickname: 'Xakoda', position: 'sup'},
         ]
     },
+    // {
+    //     id: '11',
+    //     image: ShopifyRebellion,
+    //     title: 'Shopify Rebellion',
+    //     players: [
+    //         {id: '86745912', nickname: 'Arteezy', position: 'carry'},
+    //         {id: '154715080', nickname: 'Abed', position: 'mid'},
+    //         {id: '126212866', nickname: 'SabeRLight-', position: 'offlane'},
+    //         {id: '25907144', nickname: 'Cr1t-', position: 'sup'},
+    //         {id: '94155156', nickname: 'Fly', position: 'sup'},
+    //     ]
+    // },
+    // {
+    //     id: '12',
+    //     image: Aster,
+    //     title: 'Aster',
+    //     players: [
+    //         {id: '148215639', nickname: 'Monet', position: 'carry'},
+    //         {id: '255219872', nickname: 'Xwy', position: 'mid'},
+    //         {id: '129958758', nickname: 'Xxs', position: 'offlane'},
+    //         {id: '207829314', nickname: 'BoBoKa', position: 'sup'},
+    //         {id: '183378746', nickname: '皮球', position: 'sup'},
+    //     ]
+    // },
+    // {
+    //     id: '13',
+    //     image: TSM,
+    //     title: 'TSM',
+    //     players: [
+    //         {id: '97658618', nickname: 'Timado', position: 'carry'},
+    //         {id: '238239590', nickname: 'Bryle', position: 'mid'},
+    //         {id: '184620877', nickname: 'kasane', position: 'offlane'},
+    //         {id: '346412363', nickname: 'Ari', position: 'sup'},
+    //         {id: '136829091', nickname: 'Whitemon', position: 'sup'},
+    //     ]
+    // },
+    // {
+    //     id: '14',
+    //     image: XtremeGaming,
+    //     title: 'Xtreme Gaming',
+    //     players: [
+    //         {id: '206642367', nickname: 'Ghost', position: 'carry'},
+    //         {id: '137193239', nickname: 'Paparazi', position: 'mid'},
+    //         {id: '138857296', nickname: 'JT-', position: 'offlane'},
+    //         {id: '139876032', nickname: 'Kaka', position: 'sup'},
+    //         {id: '143693439', nickname: 'Dy', position: 'sup'},
+    //     ]
+    // },
+    // {
+    //     id: '15',
+    //     image: VirtusPro,
+    //     title: 'Virtus.pro',
+    //     players: [
+    //         {id: '172099728', nickname: 'Kiritych', position: 'carry'},
+    //         {id: '123023873', nickname: 'squad1x', position: 'mid'},
+    //         {id: '195108598', nickname: 'Noticed', position: 'offlane'},
+    //         {id: '145065875', nickname: 'sayuw', position: 'sup'},
+    //         {id: '94049589', nickname: 'Fng', position: 'sup'},
+    //     ]
+    // },
+    {
+        id: '9',
+        image: TalonEsports,
+        title: 'Talon Esports',
+        players: [
+            {id: '375507918', nickname: '23savage', position: 'carry'},
+            {id: '301750126', nickname: 'Mikoto', position: 'mid'},
+            {id: '100471531', nickname: 'Jabz', position: 'offlane'},
+            {id: '193815691', nickname: 'Q', position: 'sup'},
+            {id: '101259972', nickname: 'Oli', position: 'sup'},
+        ]
+    },
+    {
+        id: '16',
+        image: Execration,
+        title: 'Execration',
+        players: [
+            {id: '389022189', nickname: 'Palos', position: 'carry'},
+            {id: '173378701', nickname: 'Bob', position: 'mid'},
+            {id: '337575662', nickname: 'Tino', position: 'offlane'},
+            {id: '399862798', nickname: 'Shanks', position: 'sup'},
+            {id: '156029808', nickname: 'BDz', position: 'sup'},
+        ]
+    },
     {
         id: '20',
         image: TeamSMG,
@@ -293,42 +293,42 @@ export const teams = [
             {id: '', nickname: '', position: 'sup'},
         ]
     },
-    // {
-    //     id: '21',
-    //     image: ,
-    //     title: '',
-    //     players: [
-    //         {id: '', nickname: '', position: 'carry'},
-    //         {id: '', nickname: '', position: 'mid'},
-    //         {id: '', nickname: '', position: 'offlane'},
-    //         {id: '', nickname: '', position: 'sup'},
-    //         {id: '', nickname: '', position: 'sup'},
-    //     ]
-    // },
-    // {
-    //     id: '21',
-    //     image: ,
-    //     title: '',
-    //     players: [
-    //         {id: '', nickname: '', position: 'carry'},
-    //         {id: '', nickname: '', position: 'mid'},
-    //         {id: '', nickname: '', position: 'offlane'},
-    //         {id: '', nickname: '', position: 'sup'},
-    //         {id: '', nickname: '', position: 'sup'},
-    //     ]
-    // },
-    // {
-    //     id: '21',
-    //     image: ,
-    //     title: '',
-    //     players: [
-    //         {id: '', nickname: '', position: 'carry'},
-    //         {id: '', nickname: '', position: 'mid'},
-    //         {id: '', nickname: '', position: 'offlane'},
-    //         {id: '', nickname: '', position: 'sup'},
-    //         {id: '', nickname: '', position: 'sup'},
-    //     ]
-    // },
+    {
+        id: '23',
+        image: BleedEsports,
+        title: 'Bleed Esports',
+        players: [
+            {id: '392565237', nickname: 'JaCkky', position: 'carry'},
+            {id: '262838756', nickname: 'Kordan', position: 'mid'},
+            {id: '84772440', nickname: 'iceiceice', position: 'offlane'},
+            {id: '102099826', nickname: 'DJ', position: 'sup'},
+            {id: '145550466', nickname: 'DuBu', position: 'sup'},
+        ]
+    },
+    {
+        id: '24',
+        image: BOOMEsports,
+        title: 'BOOM Esports',
+        players: [
+            {id: '355168766', nickname: 'Natsumi', position: 'carry'},
+            {id: '324277900', nickname: 'Yopaj-', position: 'mid'},
+            {id: '156328257', nickname: 'Fbz', position: 'offlane'},
+            {id: '121404228', nickname: 'Xepher', position: 'sup'},
+            {id: '94296097', nickname: 'xNova', position: 'sup'},
+        ]
+    },
+    {
+        id: '25',
+        image: XerxiaEsports,
+        title: 'XERXIA',
+        players: [
+            {id: '353424606', nickname: 'Karma丶', position: 'carry'},
+            {id: '136737280', nickname: 'JG', position: 'mid'},
+            {id: '145331311', nickname: 'Rupido', position: 'offlane'},
+            {id: '228517469', nickname: 'bombi', position: 'sup'},
+            {id: '110759067', nickname: 'Teehee', position: 'sup'},
+        ]
+    },
 ]
 
 
