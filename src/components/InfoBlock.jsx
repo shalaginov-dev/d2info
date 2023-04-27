@@ -43,7 +43,7 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
         copy(url)
     }
     const handleCopyJSONClick = () => {
-        copy(JSON.stringify(responseData))
+        copy(JSON.stringify(fixedInfo))
     }
 
     return (
