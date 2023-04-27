@@ -11,11 +11,9 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
     const loading = useSelector(state => state.dota.loading)
     const navigate = useNavigate()
 
-    console.log(responseData)
-    if (responseData){
-
-    }
-    const fixedInfo = {...responseData,
+    let fixedInfo = {}
+    if (!!Object.keys(responseData).length) fixedInfo = {
+        ...responseData,
         winrate: Number((responseData.winrate * 100).toFixed(0)),
         kda: Number(responseData.kda.toFixed(2)),
         gpm: Number(responseData.gpm.toFixed(0)),
@@ -26,7 +24,6 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
         teamname: player.teamName,
         position: player.position,
     }
-    console.log(fixedInfo)
 
     useEffect(() => {
         if (loading === STATUS.FAILED) {
@@ -65,7 +62,8 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
                     </div>
                     <div className="json-block">
                         {
-                            <textarea autoFocus defaultValue={JSON.stringify(responseData)} name="info" id="" cols="36" rows="18"/>
+                            <textarea autoFocus defaultValue={JSON.stringify(fixedInfo)} name="info" id="" cols="36"
+                                      rows="18"/>
                         }
                         <button className="button" onClick={handleCopyJSONClick}>Copy JSON
                         </button>
@@ -74,11 +72,5 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
             </div>
     )
 })
-
-//     `wins: ${responseData.wins}
-// losses: ${responseData.losses}
-// total: ${responseData.total}
-// win rate: ${responseData.winrate.toFixed(2)}
-// kills: ${responseData.kills.toFixed(2)}`
 
 export default InfoBlock
