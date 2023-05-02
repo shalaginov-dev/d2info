@@ -120,7 +120,8 @@ body {
     position: absolute;
     top: 130px;
     left: -47px;
-    font: 24px bold;
+    font-size: 24px;
+    font-weight: 700;
     color: $red;
     transform: rotate(310deg)
   }
@@ -128,7 +129,8 @@ body {
     position: absolute;
     top: 394px;
     left: -44px;
-    font: 24px bold;
+    font-size: 24px;
+    font-weight: 700;
     color: $red;
     transform: rotate(310deg)
   }

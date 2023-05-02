@@ -22,7 +22,7 @@ const InfoBlock = memo(({player, hero, responseData, patch, url}) => {
         lastHits: Number(responseData.lastHits.toFixed(0)),
         denies: Number(responseData.denies.toFixed(0)),
         teamname: player.teamName,
-        position: player.position,
+        position: player.position.toUpperCase(),
     }
 
     useEffect(() => {
