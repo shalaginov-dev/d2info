@@ -142,8 +142,7 @@ export const teams = [
         players: [
             {id: '96183976', nickname: 'TA2000', position: 'carry'},
             {id: '140297552', nickname: 'No!ob', position: 'mid'},
-            // add player
-            {id: '', nickname: '', position: 'offlane'},
+            {id: '183719386', nickname: 'ATF', position: 'offlane'},
             {id: '152168157', nickname: 'OmaR', position: 'sup'},
             {id: '320219866', nickname: 'kaori ', position: 'sup'},
         ]
@@ -287,10 +286,9 @@ export const teams = [
         players: [
             {id: '132309493', nickname: 'Raven', position: 'carry'},
             {id: '94281932', nickname: 'Karl', position: 'mid'},
-            {id: '184950344', nickname: 'Kuku', position: 'offlane'},
+            {id: '87012746', nickname: 'kpii', position: 'offlane'},
             {id: '155494381', nickname: 'TIMS', position: 'sup'},
-            // add player
-            {id: '', nickname: '', position: 'sup'},
+            {id: '184950344', nickname: 'Kuku', position: 'sup'},
         ]
     },
     {
